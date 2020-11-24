@@ -27,8 +27,5 @@ grammar Lang {
     }
 }
 
-
-my $str = slurp 'program.x';
-my $parsed = Lang.parse('program.x');
-
-say $parsed;
+my $program = Lang.parsefile('program.x');
+say $program;
